@@ -4,7 +4,7 @@
 
 1. Docker
 2. docker-compose
-3. [https://taskfile.dev/](Task)
+3. [Task](https://taskfile.dev/)
 
 ## Installation
 
