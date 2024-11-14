@@ -25,18 +25,18 @@ Variables: more than 100 variables on location, tactics, perpetrators, targets, 
 
 For clarity, only the following are used in the dashboard:
 
-attacktype1_txt : text
-city            : text
-country_txt     : text
-eventid         : uuid
-gname           : text
-imonth          : number
-individual      : boolean
-iyear           : number
-nkill           : number
-region_txt      : text
-success         : boolean
-suicide         : boolean
-weaptype1_txt   : text
+- attacktype1_txt : text
+- city            : text
+- country_txt     : text
+- eventid         : uuid
+- gname           : text
+- imonth          : number
+- individual      : boolean
+- iyear           : number
+- nkill           : number
+- region_txt      : text
+- success         : boolean
+- suicide         : boolean
+- weaptype1_txt   : text
 
 See the [GTD Codebook](https://www.start.umd.edu/gtd/downloads/Codebook.pdf) for important details on data collection methodology, definitions, and coding schema.
