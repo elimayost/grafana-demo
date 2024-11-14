@@ -8,7 +8,7 @@
 
 ## Installation
 
-1. Create a "grafan_data" directory
+1. Create a "grafana_data" directory
 2. Launch the required containers:
 
 ``` bash
