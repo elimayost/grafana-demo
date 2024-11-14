@@ -38,7 +38,7 @@ task create-index:run
 6. Add the processors for that index:
 
 ``` bash
-task add-processars:run
+task add-processors:run
 ```
 
 7. Ingest the data:
