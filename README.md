@@ -21,7 +21,14 @@ docker-compose up
 docker exec -it elasticsearch elasticsearch-reset-password -u elastic
 ```
 
-4. Copy the password into .env
+4. Create a .env file with the following:
+
+``` bash
+USERNAME=elastic
+PASSWORD='XXXXXXXXXXXXXX'
+INDEX_NAME= gtd
+```
+
 5. Create the elasticesearch gtd index:
 
 ``` bash
