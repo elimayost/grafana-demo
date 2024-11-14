@@ -38,7 +38,7 @@ task create-index:run
 6. Add the processors for that index:
 
 ``` bash
-task add-processaors:run
+task add-processars:run
 ```
 
 7. Ingest the data:
@@ -56,7 +56,7 @@ task count-docs:run
 9. Copy the sqlite database file to grafana container:
 
 ``` bash
-docker copy data/gtd.sqlite grafana:/
+docker cp data/gtd.sqlite grafana:/
 ```
 
 ## Grafana UI
