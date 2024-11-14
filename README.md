@@ -266,24 +266,28 @@ To discuss:
 - Value mappings as an easier way tha case/then in sql query
 - The difference between the types of imonth and month and the need for casting for ordering correctly.
 
-### Total events - by weapon
+3. By weekday (table)
 
 ``` sql
-select
-    iyear as year,
-    weaptype1_txt as weapon,
-    count(*) as total
+select case strftime('%w', printf('%04d-%02d-%02d', iyear, imonth, iday))
+           when '1' then 1
+           when '2' then 2
+           when '3' then 3
+           when '4' then 4
+           when '5' then 5
+           when '6' then 6
+           when '0' then 7
+       end as weekday_name, count(*) as total
 from gtd
-where weapon='$weapon'
-group by year, weapon
-order by year, weapon
+where imonth!=0 and iday!=0
+group by weekday_name
+order by weekday_name
 ```
 
-Things to discuss:
+To discuss:
 
-- Panel options - Repeat options and max per row.
-- Thresholds and Standard options color Scheme, BAR chart color by field option.
-- Talk about theresholds with repeat and the need for single panels if the thresholds are different from panel to panel.
+- Explain why we are using case/then here
+- Cell options gauge - Retro LCD
 
 ### Total events - by location
 
