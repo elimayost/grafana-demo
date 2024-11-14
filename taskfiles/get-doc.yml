@@ -1,0 +1,9 @@
+
+version: "3"
+
+tasks:
+  run:
+    desc: Get the one document from ES gtd index
+    cmds:
+      -  cmd: curl -sk -u "${USERNAME}:${PASSWORD}" "https://localhost:9200/${INDEX_NAME}/_doc/{{.DOC_ID}}" | jq
+         silent: true

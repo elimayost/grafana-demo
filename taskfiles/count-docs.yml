@@ -1,0 +1,9 @@
+
+version: "3"
+
+tasks:
+  run:
+    desc: Count docs in ES gtd index
+    cmds:
+      -  cmd: curl -sk -u "${USERNAME}:${PASSWORD}" "https://localhost:9200/${INDEX_NAME}/_count" | jq
+         silent: true

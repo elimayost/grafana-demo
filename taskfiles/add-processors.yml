@@ -1,0 +1,9 @@
+
+version: "3"
+
+tasks:
+  run:
+    desc: Add ES gtd pipeline processors
+    cmds:
+      -  cmd: ./scripts/add-processors.sh $USERNAME $PASSWORD $INDEX_NAME | jq
+         silent: true

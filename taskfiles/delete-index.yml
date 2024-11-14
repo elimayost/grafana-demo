@@ -1,0 +1,9 @@
+
+version: "3"
+
+tasks:
+  run:
+    desc: Delete ES gtd index
+    cmds:
+      -  cmd: curl -sk -u "${USERNAME}:${PASSWORD}" "https://localhost:9200/${INDEX_NAME}" -XDELETE | jq
+         silent: true

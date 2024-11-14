@@ -1,0 +1,9 @@
+
+version: "3"
+
+tasks:
+  run:
+    desc: Get the ID of one document in ES gtd index
+    cmds:
+      -  cmd: curl -sk -u "${USERNAME}:${PASSWORD}" "https://localhost:9200/${INDEX_NAME}/_search?_source=false&size=1" | jq
+         silent: true

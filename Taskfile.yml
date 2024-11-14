@@ -1,0 +1,15 @@
+
+version: "3"
+
+dotenv: ['.env']
+
+includes:
+  create-index: ./taskfiles/create-index.yml
+  add-processors: ./taskfiles/add-processors.yml
+  ingest: ./taskfiles/ingest.yml
+  count-docs: ./taskfiles/count-docs.yml
+  get-doc-id: ./taskfiles/get-doc-id.yml
+  get-doc: ./taskfiles/get-doc.yml
+  show-mapping: ./taskfiles/show-mapping.yml
+  show-settings: ./taskfiles/show-settings.yml
+  delete-index: ./taskfiles/delete-index.yml

@@ -1,0 +1,22 @@
+
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    image: elasticsearch:8.15.1
+    networks:
+      - my-network
+    ports:
+      - 9200:9200
+    environment: ['discovery.type=single-node']
+  grafana:
+    container_name: grafana
+    image: grafana/grafana
+    networks:
+      - my-network
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafana_data:/var/lib/grafana
+
+networks:
+  my-network:

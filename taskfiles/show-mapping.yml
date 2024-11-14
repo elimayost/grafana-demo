@@ -1,0 +1,9 @@
+
+version: "3"
+
+tasks:
+  run:
+    desc: Show ES gtd index mapping
+    cmds:
+      -  cmd: curl -sk -u "${USERNAME}:${PASSWORD}" "https://localhost:9200/${INDEX_NAME}/_mapping" | jq
+         silent: true

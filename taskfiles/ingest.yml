@@ -1,0 +1,9 @@
+
+version: "3"
+
+tasks:
+  run:
+    desc: Ingest data in ES gtd index
+    cmds:
+      -  cmd: ./scripts/ingest.sh
+         silent: true

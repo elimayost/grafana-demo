@@ -1,0 +1,9 @@
+
+version: "3"
+
+tasks:
+  run:
+    desc: Create ES gtd index
+    cmds:
+      -  cmd: ./scripts/create-index.sh $USERNAME $PASSWORD $INDEX_NAME | jq
+         silent: true
