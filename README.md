@@ -47,7 +47,7 @@ task add-processors:run
 task ingest:run
 ```
 
-8. Verify the total docs count (shoul be ~ 180K):
+8. Verify the total docs count (should be ~ 180K):
 
 ``` bash
 task count-docs:run
